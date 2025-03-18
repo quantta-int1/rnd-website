@@ -144,7 +144,6 @@ function Header() {
                     className={`relative px-3 lg:px-4 py-2 text-gray-700 hover:text-gray-900 group transition-all duration-300 ${
                       scrolled ? 'text-sm' : 'text-base'
                     }`}
-                    whileHover={{ scale: 1.05, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                   >
                     <span className="relative z-10">{item}</span>
@@ -158,7 +157,6 @@ function Header() {
                 className={`relative inline-flex items-center gap-2 px-4 lg:px-6 py-2 lg:py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full overflow-hidden shadow-lg transition-all duration-300 ${
                   scrolled ? 'text-sm py-2' : 'text-base'
                 }`}
-                whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <span>Get Started</span>
@@ -169,7 +167,7 @@ function Header() {
                 >
                   →
                 </motion.span>
-                <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-500 opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-orange-500 opacity-0 "></div>
               </motion.a>
             </nav>
           </div>
@@ -194,7 +192,6 @@ function Header() {
                       animate={{ x: 0, opacity: 1 }}
                       exit={{ x: -20, opacity: 0 }}
                       transition={{ duration: 0.3, delay: index * 0.1 }}
-                      whileHover={{ x: 8, backgroundColor: "rgba(251, 146, 60, 0.1)" }}
                     >
                       {item}
                     </motion.a>
